@@ -10,6 +10,9 @@
     <preference name="FABRIC_API_KEY" />
     <preference name="FABRIC_API_SECRET" />
 
+    <hook type="after_platform_add" src="hooks/after_platform_add.js" />
+    <hook type="before_platform_rm" src="hooks/before_platform_rm.js" />
+
     <js-module name="FabricPlugin" src="www/FabricPlugin.js">
         <clobbers target="window.fabric.core"/>
     </js-module>
