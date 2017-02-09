@@ -10,9 +10,6 @@
     <preference name="FABRIC_API_KEY" />
     <preference name="FABRIC_API_SECRET" />
 
-    <hook type="after_plugin_add" src="hooks/after_plugin_add.js" />
-    <hook type="before_plugin_rm" src="hooks/before_plugin_rm.js" />
-
     <js-module name="FabricPlugin" src="www/FabricPlugin.js">
         <clobbers target="window.fabric.core"/>
     </js-module>
@@ -70,9 +67,6 @@
         <framework src="libc++.dylib" />
         <framework src="SystemConfiguration.framework" />
         <framework src="Security.framework" weak="true" />
-
-        <framework src="lib/ios/Fabric.framework" custom="true" />
-        <framework src="lib/ios/Crashlytics.framework" custom="true" />
     </platform>
 
 </plugin>
